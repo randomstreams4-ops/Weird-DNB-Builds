@@ -1,18 +1,6 @@
 # About
 
-This is an archive of the source code for every public Vs. Dave & Bambi version.
-
-This includes:
--  Major updates (1.0, 2.0, 3.0, etc.)
--  Minor updates (0.x),
--  Patch/hotfix updates (Patch = 0.0.x).
-
-The id at the right of the folders are the commit ids from the repository.
-
-# NOT INCLUDED VERSIONS
--   3.0d (Aprils Fools 2023 Build. Reason: This was not committed onto the repo. This is owned by Erizur).
--   3.1 (Aprils Fools 2025 Build. Reason: Not technically an official release.)
-
+This is an archive of the source code for every weird Vs. Dave & Bambi build that has currently been found.
 
 # COMPILING NOTE:
 -   There won't be tips on how to compile these, this is simply just to exist as an archive.
