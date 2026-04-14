@@ -1,6 +1,6 @@
 # About
 
-This is an archive of the source code for every weird Vs. Dave & Bambi build that has currently been found.
+The source code for all Weird Dave and Bambi builds by @DaveAndBambE on Gamejolt.
 
 # COMPILING NOTE:
 -   There won't be tips on how to compile these, this is simply just to exist as an archive.
