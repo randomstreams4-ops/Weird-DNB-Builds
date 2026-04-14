@@ -926,10 +926,6 @@ class PlayState extends MusicBeatState
 			{
 				dad.y += 250;
 			}
-			case 'bambi-splitathon':
-			{
-				dad.y += 300;
-			}
 		}
 
 
@@ -1749,44 +1745,6 @@ class PlayState extends MusicBeatState
 				iconP1.animation.play(SONG.player1);
 			else
 				iconP1.animation.play('bf-old');
-		}
-		if(SONG.song.toLowerCase() == "splitathon")
-		{
-			switch(curStep)
-			{
-				case 4736:
-					daveCutscene('lookup', false, 125, 360);
-				case 4800:
-					FlxG.camera.flash(FlxColor.WHITE, 1);
-					daveCutscene('backup', true, -300, 360);
-					daveCutscene('backup', false, -300, 360);
-					addSplitathonChar("bambi-splitathon");
-					if (BAMBICUTSCENEICONHURHURHUR == null)
-					{
-					BAMBICUTSCENEICONHURHURHUR = new HealthIcon("bambi", false);
-					BAMBICUTSCENEICONHURHURHUR.y = healthBar.y - (BAMBICUTSCENEICONHURHURHUR.height / 2);
-					add(BAMBICUTSCENEICONHURHURHUR);
-					BAMBICUTSCENEICONHURHURHUR.cameras = [camHUD];
-					BAMBICUTSCENEICONHURHURHUR.x = -100;
-					FlxTween.linearMotion(BAMBICUTSCENEICONHURHURHUR,-100,BAMBICUTSCENEICONHURHURHUR.y,iconP2.x,BAMBICUTSCENEICONHURHURHUR.y,0.3);
-					new FlxTimer().start(0.3,FlingCharacterIconToOblivionAndBeyond);
-					}
-				case 5824:
-					FlxG.camera.flash(FlxColor.WHITE, 1);
-					daveCutscene('backup', true, -300, 360);
-					addSplitathonChar("dave-splitathon");
-					iconP2.animation.play("dave",true);
-				case 6080:
-					FlxG.camera.flash(FlxColor.WHITE, 1);
-					daveCutscene('end', false, -300, 360);
-					addSplitathonChar("bambi-splitathon");
-					iconP2.animation.play("bambi",true);
-				case 8384:
-					FlxG.camera.flash(FlxColor.WHITE, 1);
-					daveCutscene('backup', true, -300, 360);
-					addSplitathonChar("dave-splitathon");
-					iconP2.animation.play("dave",true);
-			}
 		}
 
 		switch (curStage)
@@ -3376,10 +3334,6 @@ class PlayState extends MusicBeatState
 			case 'dave-splitathon':
 			{
 				dad.y += 250;
-			}
-			case 'bambi-splitathon':
-			{
-				dad.y += 300;
 			}
 		}
 	}
